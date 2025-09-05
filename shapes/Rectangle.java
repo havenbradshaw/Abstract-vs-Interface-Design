@@ -1,10 +1,10 @@
 package shapes;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements interfaces.Calculable, interfaces.Describable {
     double width, height;
 
-    public Rectangle(String color, String name, double width, double height) {
-        super(color, name);
+    public Rectangle(String color, double width, double height) {
+        super(color);
         this.width = width;
         this.height = height;
     }
@@ -16,12 +16,12 @@ public class Rectangle extends Shape {
 
     @Override
     public void draw() {
-        System.out.println("Drawing a " + color + " " + name + " with width " + width + " and height " + height);
+        System.out.println("Drawing a " + color + " rectangle with width " + width + " and height " + height);
     }
 
     @Override
     public String describe() {
-        return "You see a " + color + " " + name + " with width " + width + " and height " + height;
+        return "You see a " + color + " rectangle with width " + width + " and height " + height;
     }
     
 }

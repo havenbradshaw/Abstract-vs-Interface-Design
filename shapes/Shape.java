@@ -2,11 +2,9 @@ package shapes;
 
 public abstract class Shape {
     String color;
-    String name;
 
-    public Shape(String color, String name) {
+    public Shape(String color) {
         this.color = color;
-        this.name = name;
     }
 
     public abstract double getArea();

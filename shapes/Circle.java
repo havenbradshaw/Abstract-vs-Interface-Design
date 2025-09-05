@@ -1,13 +1,10 @@
 package shapes;
 
-import interfaces.Calculable;
-import interfaces.Describable;
-
-public class Circle extends Shape implements Calculable, Describable {
+public class Circle extends Shape implements interfaces.Calculable, interfaces.Describable {
     double radius;
 
-    public Circle(String color, String name, double radius) {
-        super(color, name);
+    public Circle(String color, double radius) {
+        super(color);
         this.radius = radius;
     }
 
@@ -18,12 +15,12 @@ public class Circle extends Shape implements Calculable, Describable {
 
     @Override
     public void draw() {
-        System.out.println("Drawing a " + color + " " + name + " with radius " + radius);
+        System.out.println("Drawing a " + color + " circle with radius " + radius);
     }
 
     @Override
     public String describe() {
-        return "You see a " + color + " " + name + " with radius " + radius;
+        return "You see a " + color + " circle with radius " + radius;
     }
     
 }

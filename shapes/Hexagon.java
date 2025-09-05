@@ -1,10 +1,10 @@
 package shapes;
 
-public class Hexagon extends Shape {
+public class Hexagon extends Shape implements interfaces.Calculable, interfaces.Describable {
     double sideLength;
 
-    public Hexagon(String color, String name, double sideLength) {
-        super(color, name);
+    public Hexagon(String color, double sideLength) {
+        super(color);
         this.sideLength = sideLength;
     }
 
@@ -15,12 +15,12 @@ public class Hexagon extends Shape {
 
     @Override
     public void draw() {
-        System.out.println("Drawing a " + color + " " + name + " with side length " + sideLength);
+        System.out.println("Drawing a " + color + " hexagon with side length " + sideLength);
     }
 
     @Override
     public String describe() {
-        return "You see a " + color + " " + name + " with side length " + sideLength;
+        return "You see a " + color + " hexagon with side length " + sideLength;
     }
 
 }
