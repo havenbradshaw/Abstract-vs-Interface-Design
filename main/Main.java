@@ -24,20 +24,14 @@ public class Main {
             String order = scan.nextLine();
 
             switch (order) {
-                case "1":
-                    createRectangle();
-                    break;
-                case "2":
-                    createCircle();
-                    break;
-                case "3":
-                    createHexagon();
-                    break;
-                case "4":
+                case "1" -> createRectangle();
+                case "2" -> createCircle();
+                case "3" -> createHexagon();
+                case "4" -> {
                     System.out.println("Goodbye!");
                     return;
-                default:
-                    System.out.println("Invalid choice.");
+                }
+                default -> System.out.println("Invalid choice.");
             }
         }
     }
