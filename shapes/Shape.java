@@ -1,5 +1,5 @@
 package shapes;
-
+//Abstract class for shape classes
 public abstract class Shape {
     String color;
     String name;
