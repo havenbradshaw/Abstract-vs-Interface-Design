@@ -1,5 +1,5 @@
-How to run each version:
-Abstract class shape:
+How to run each version:  
+Abstract class shape:  
 Instantiate instances of shape objects inside of an array list and loop through the array list calling each method.
 
 Interfaces:
