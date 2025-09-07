@@ -1,18 +1,18 @@
-Level 1: 
+Abstract vs Interface Design – Shape Management System
 
-built an abstract class named Shape and gave it attributes (color, name) as well as abstract methods (draw getarea and describe).
-built 2 subclasses (circle and rectangle) with inheritance. 
-built 2 interfaces (calculabe and describable) and implemented them into both circle and rectangle.
+This Java project implements a Shape Management System using both abstract classes and interfaces to explore object-oriented design principles. The goal is to demonstrate how different modeling techniques can be used to represent shared behaviors like area calculation, drawing, and shape description.
 
-What worked better with interfaces?
+The codebase is structured into three packages:
+- "main" – Contains the entry point and user interface ("Main.java")
+- "shapes" – Contains the abstract class ("Shape") and concrete shape implementations ("Circle", "Rectangle","Hexagon")
+- "interfaces" – Defines behavior contracts ("Calculable", "Describable")
 
-What was more reusable or readable in the abstract class version?
+Users interact with the system via a command-line menu to create and view shapes. Each shape supports area calculation, drawing, and description. Polymorphism is demonstrated by storing created shapes in a shared list and interacting with them through their common abstract type.
 
-Which design scales better?
+To compile and run:
+1. Compile: "javac main/Main.java"
+2. Run: "java main.Main"
 
-Which approach would you choose for a real system and why?
+This project compares the abstract class approach (shared structure and default behavior) with the interface-based approach (behavioral flexibility). Both are implemented and tested across multiple shapes, allowing for an objective comparison in terms of scalability, reusability, and clarity.
 
--Part 3: 
-I believe that the interfaces would be much more scalable and can be modified while maintaining clean code. With small projects like this, using abstract methods in classes are more efficient in my opinion and may prevent unnecessary files. As the project grows and more gets added, having a separate interface class to hold the methods feels like it would result in neater and more easily read code. I would certainly use interfaces for any sort of scalable project so to keep everything tidy.
-
-AI: I used copilot to aid me in laying out a base plan for what my code should look like as well as catching syntax errors that I made as I went. I used copilots autocomplete feature throughout the code. 
+The project satisfies the full set of assignment criteria, including JavaDocs, modular code organization, and design reflections.
