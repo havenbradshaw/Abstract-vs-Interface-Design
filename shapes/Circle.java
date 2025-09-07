@@ -1,9 +1,7 @@
 package shapes;
 
-import interfaces.Calculable;
-import interfaces.Describable;
-
-public class Circle extends Shape implements Calculable, Describable {
+// Circle class extending Shape
+public class Circle extends Shape {
     double radius;
 
     public Circle(String color, String name, double radius) {

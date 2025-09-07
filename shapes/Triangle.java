@@ -1,9 +1,7 @@
 package shapes;
 
-import interfaces.Calculable;
-import interfaces.Describable;
-
-public abstract class Triangle extends Shape implements Describable, Calculable {
+// Triangle class extending Shape
+public abstract class Triangle extends Shape {
     double base, height;
 
     public Triangle(String color, String name, double base, double height) {

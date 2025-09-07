@@ -1,9 +1,7 @@
 package shapes;
 
-import interfaces.Calculable;
-import interfaces.Describable;
-
-public class Rectangle extends Shape implements Describable, Calculable {
+// Rectangle class extending Shape
+public class Rectangle extends Shape {
     double width, height;
 
     public Rectangle(String color, String name, double width, double height) {
