@@ -1,3 +1,7 @@
+To run:
+
+Run the application from main and enter 1 to test interfaces and 2 to test abstract class. 
+
 Level 1: 
 
 built an abstract class named Shape and gave it attributes (color, name) as well as abstract methods (draw getarea and describe).
