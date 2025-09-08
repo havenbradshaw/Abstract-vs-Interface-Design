@@ -15,4 +15,4 @@ To compile and run:
 
 This project compares the abstract class approach (shared structure and default behavior) with the interface-based approach (behavioral flexibility). Both are implemented and tested across multiple shapes, allowing for an objective comparison in terms of scalability, reusability, and clarity.
 
-The project satisfies the full set of assignment criteria, including JavaDocs, modular code organization, and design reflections.
+The project fufills all three tiers outlined in Canvas.
